@@ -33,3 +33,5 @@ Thumbs.db
 
 # Misc
 *.log
+.vercel
+.env*.local
