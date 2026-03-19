@@ -66,7 +66,7 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     "/",
-    "/(en|fr)/:path*",
+    "/(en)/:path*",
     "/keystatic",
     "/keystatic/:path*",
     "/keystatic-login",

@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/routing"
-import { LanguageSwitcher } from "./language-switcher"
 import { useState } from "react"
 import Image from "next/image"
 
@@ -53,7 +52,6 @@ export function Navigation() {
             <Link href="#contact" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#contact")}>
               {t("nav.contact")}
             </Link>
-            <LanguageSwitcher />
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white">
@@ -113,9 +111,6 @@ export function Navigation() {
             >
               {t("nav.contact")}
             </Link>
-            <div className="px-3 py-2">
-              <LanguageSwitcher />
-            </div>
           </div>
         )}
       </div>
