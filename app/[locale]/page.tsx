@@ -53,10 +53,9 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
       <Hero />
       <IdeasSection />
       <ServicesSection />
-      <TeamSection />
       <TestimonialsSection testimonials={testimonials} />
       <BlogSection posts={posts} />
-      <PartnersSection />
+      <TeamSection />
       <ContactSection />
       <Footer />
     </main>
