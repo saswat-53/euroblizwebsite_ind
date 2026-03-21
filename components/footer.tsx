@@ -51,8 +51,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#partners" className="hover:text-primary-foreground transition-colors">
-                  {t("nav.partners")}
+                <Link href="#team" className="hover:text-primary-foreground transition-colors">
+                  {t("nav.team")}
                 </Link>
               </li>
               <li>
