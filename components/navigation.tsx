@@ -47,7 +47,7 @@ export function Navigation() {
             {/* <Link href="#partners" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#partners")}>
               {t("nav.partners")}
             </Link> */}
-            <Link href="#team" className="text-sm font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#team")}>
+            <Link href="#team" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#team")}>
               {t("nav.team")}
             </Link>
             <Link href="#contact" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#contact")}>
