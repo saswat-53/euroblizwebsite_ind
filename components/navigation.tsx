@@ -37,17 +37,18 @@ export function Navigation() {
             <Link href="#services" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#services")}>
               {t("nav.services")}
             </Link>
-            {/* <Link href="#team" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
-              {t("nav.team")}
-            </Link> */}
+
             <Link href="#testimonials" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#testimonials")}>
               {t("nav.testimonials")}
             </Link>
             <Link href="#blog" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#blog")}>
               {t("nav.blog")}
             </Link>
-            <Link href="#partners" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#partners")}>
+            {/* <Link href="#partners" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#partners")}>
               {t("nav.partners")}
+            </Link> */}
+            <Link href="#team" className="text-sm font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#team")}>
+              {t("nav.team")}
             </Link>
             <Link href="#contact" className="text-md font-medium text-gray-300 hover:text-white transition-colors" onClick={handleSmoothScroll("#contact")}>
               {t("nav.contact")}
@@ -77,12 +78,6 @@ export function Navigation() {
             >
               {t("nav.services")}
             </Link>
-            {/* <Link
-              href="#team"
-              className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
-            >
-              {t("nav.team")}
-            </Link> */}
             <Link
               href="#testimonials"
               className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
@@ -97,12 +92,18 @@ export function Navigation() {
             >
               {t("nav.blog")}
             </Link>
-            <Link
+            {/* <Link
               href="#partners"
               className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
               onClick={handleSmoothScroll("#partners")}
             >
               {t("nav.partners")}
+            </Link> */}
+            <Link
+              href="#team"
+              className="block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors"
+            >
+              {t("nav.team")}
             </Link>
             <Link
               href="#contact"
