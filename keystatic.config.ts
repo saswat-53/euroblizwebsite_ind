@@ -33,14 +33,14 @@ export default config({
           label: 'Position (English)',
         }),
 
-        // French Content (commented out — data preserved in YAML)
-        // quote_fr: fields.text({
-        //   label: 'Quote (French)',
-        //   multiline: true,
-        // }),
-        // position_fr: fields.text({
-        //   label: 'Position (French)',
-        // }),
+        // French Content
+        quote_fr: fields.text({
+          label: 'Quote (French)',
+          multiline: true,
+        }),
+        position_fr: fields.text({
+          label: 'Position (French)',
+        }),
 
         // Metadata
         rating: fields.integer({
@@ -70,18 +70,18 @@ export default config({
           description: 'Main blog content in English (supports markdown)',
         }),
 
-        // French Content (commented out — data preserved in YAML)
-        // title_fr: fields.text({ label: 'Title (French)' }),
-        // excerpt_fr: fields.text({
-        //   label: 'Excerpt (French)',
-        //   multiline: true,
-        //   description: 'Short summary of the blog post',
-        // }),
-        // content_fr: fields.text({
-        //   label: 'Content (French)',
-        //   multiline: true,
-        //   description: 'Main blog content in French (supports markdown)',
-        // }),
+        // French Content
+        title_fr: fields.text({ label: 'Title (French)' }),
+        excerpt_fr: fields.text({
+          label: 'Excerpt (French)',
+          multiline: true,
+          description: 'Short summary of the blog post',
+        }),
+        content_fr: fields.text({
+          label: 'Content (French)',
+          multiline: true,
+          description: 'Main blog content in French (supports markdown)',
+        }),
 
         // Metadata
         image: fields.image({
