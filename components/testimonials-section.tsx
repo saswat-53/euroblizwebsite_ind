@@ -3,11 +3,12 @@
 import { useTranslations } from "next-intl"
 import { Star, Quote } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/useScrollAnimation"
+import { DocumentNodes } from "@/lib/document-renderer"
 
 interface Testimonial {
   slug: string
   name: string
-  quote: string
+  quote: Parameters<typeof DocumentNodes>[0]["document"] | null
   position: string
   rating: number | null
 }
@@ -51,9 +52,12 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
               </div>
 
               {/* Quote Text - Made larger and bolder for prominence */}
-              <p className="text-xl font-semibold text-foreground mb-6 leading-snug italic grow">
-                {testimonial.quote}
-              </p>
+              <div className="text-xl font-semibold text-foreground mb-6 leading-snug italic grow prose prose-sm max-w-none prose-p:my-0 prose-strong:text-foreground prose-em:text-foreground/80">
+                {testimonial.quote
+                  ? <DocumentNodes document={testimonial.quote} />
+                  : null
+                }
+              </div>
 
               {/* Separator Line - Always at bottom */}
               <div className="border-t border-gray-100 pt-6 mt-auto">

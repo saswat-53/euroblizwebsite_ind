@@ -6,12 +6,13 @@ import Image from "next/image"
 import { useState, useEffect } from "react"
 import { BlogModal } from "./blog-modal"
 import { useScrollAnimation } from "@/hooks/useScrollAnimation"
+import { DocumentNodes } from "@/lib/document-renderer"
 
 interface BlogPost {
   slug: string
   title: string
   excerpt: string
-  content: any
+  content: Parameters<typeof DocumentNodes>[0]["document"] | null
   image: string | null
   date: string
   readTime: string

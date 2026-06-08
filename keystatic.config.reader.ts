@@ -22,18 +22,32 @@ export default config({
         name: fields.slug({ name: { label: 'Client Name' } }),
 
         // English Content
-        quote_en: fields.text({
+        quote_en: fields.document({
           label: 'Quote (English)',
-          multiline: true,
+          formatting: {
+            inlineMarks: {
+              bold: true,
+              italic: true,
+              underline: true,
+            },
+          },
+          links: true,
         }),
         position_en: fields.text({
           label: 'Position (English)',
         }),
 
         // French Content (reader schema — required for YAML validation, not shown in admin UI)
-        quote_fr: fields.text({
+        quote_fr: fields.document({
           label: 'Quote (French)',
-          multiline: true,
+          formatting: {
+            inlineMarks: {
+              bold: true,
+              italic: true,
+              underline: true,
+            },
+          },
+          links: true,
         }),
         position_fr: fields.text({
           label: 'Position (French)',
@@ -61,10 +75,18 @@ export default config({
           multiline: true,
           description: 'Short summary of the blog post',
         }),
-        content_en: fields.text({
+        content_en: fields.document({
           label: 'Content (English)',
-          multiline: true,
-          description: 'Main blog content in English (supports markdown)',
+          description: 'Main blog content in English',
+          formatting: {
+            headingLevels: [1, 2, 3],
+            inlineMarks: {
+              bold: true,
+              italic: true,
+              underline: true,
+            },
+          },
+          links: true,
         }),
 
         // French Content (reader schema — required for YAML validation, not shown in admin UI)
@@ -74,10 +96,18 @@ export default config({
           multiline: true,
           description: 'Short summary of the blog post',
         }),
-        content_fr: fields.text({
+        content_fr: fields.document({
           label: 'Content (French)',
-          multiline: true,
-          description: 'Main blog content in French (supports markdown)',
+          description: 'Main blog content in French',
+          formatting: {
+            headingLevels: [1, 2, 3],
+            inlineMarks: {
+              bold: true,
+              italic: true,
+              underline: true,
+            },
+          },
+          links: true,
         }),
 
         // Metadata
