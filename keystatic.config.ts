@@ -28,6 +28,7 @@ export default config({
         quote_en: fields.document({
           label: 'Quote (English)',
           formatting: {
+            headingLevels: [1, 2, 3],
             inlineMarks: {
               bold: true,
               italic: true,
@@ -44,6 +45,7 @@ export default config({
         quote_fr: fields.document({
           label: 'Quote (French)',
           formatting: {
+            headingLevels: [1, 2, 3],
             inlineMarks: {
               bold: true,
               italic: true,
